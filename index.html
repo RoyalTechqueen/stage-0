@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <article data-testid="test-profile-card" class="profile-card">
+    <figure class="avatar-container">
+      <img
+        src="./profile.png"
+        alt="Profile photo of Asma’a Khadijah"
+        data-testid="test-user-avatar"
+      />
+    </figure>
+
+    <section class="info">
+      <header>
+        <h2 data-testid="test-user-name">Asma’a Khadijah Ishowo</h2>
+      </header>
+
+      <p data-testid="test-user-bio">
+        A passionate frontend developer dedicated to building responsive, accessible, and visually appealing web interfaces.
+      </p>
+
+      <p>
+        Current Time (ms): 
+        <span data-testid="test-user-time" id="user-time"></span>
+      </p>
+
+      <nav>
+        <ul data-testid="test-user-social-links" class="social-links">
+          <li><a data-testid="test-user-social-twitter" href="https://x.com/RoyalTechqueen?t=2Wk6kNXeeec6mjOKYg7MEw&s=09" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          <li><a data-testid="test-user-social-github" href="https://github.com/RoyalTechqueenm" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/asmaa-khadijah-ishowo-aa6363269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Exploring new technologies</li>
+          <li>Reading tech blogs</li>
+          <li>Building projects</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Unresponsive websites</li>
+          <li>Cluttered UI</li>
+          <li>Slow internet</li>
+        </ul>
+      </section>
+    </section>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
